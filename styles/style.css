@@ -1,0 +1,70 @@
+body {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(251, 221, 19) 0.1%,
+    rgb(255, 153, 1) 90%
+  );
+  font-family: "Roboto", sans-serif;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+button {
+  width: 100px;
+  height: 40px;
+  margin-top: -3px;
+}
+.container {
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 60px 100px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+#weather-description {
+  font-weight: 700;
+}
+.btn-primary {
+  background-color: rgb(8, 177, 233);
+  border: none;
+}
+.btn-primary:hover {
+  background-color: rgb(23, 165, 213);
+}
+.btn-outline-secondary {
+  height: 40px;
+}
+.form-control {
+  height: 40px;
+  width: 300px;
+  display: inline;
+}
+
+.top h1 {
+  margin-top: 33px;
+  font-weight: 700;
+}
+.top p {
+  font-size: 14px;
+  line-height: 0.5;
+}
+.middle h2 {
+  font-size: 55px;
+}
+.bottom {
+  line-height: 0.6;
+  margin-top: 10px;
+}
+.middle-emoji {
+  font-size: 95px;
+  margin: -5px 0;
+  margin-left: 60px;
+}
+.weekdays-weather {
+  margin-top: 26px;
+  font-size: 20px;
+  line-break: none;
+  text-align: right;
+  line-height: 3.8;
+  word-spacing: 10px;
+}
