@@ -68,3 +68,7 @@ button {
   line-height: 3.8;
   word-spacing: 10px;
 }
+.footer {
+  text-align: center;
+  font-size: 13px;
+}
