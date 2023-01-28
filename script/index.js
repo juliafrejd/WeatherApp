@@ -67,8 +67,8 @@ function showWeather(response) {
   changeWind.innerHTML = `Wind: ${wind}km/h`;
 }
 function showPosition(position) {
-  let lat = position.coordinates.latitude;
-  let lon = position.coordinates.longitude;
+  let lat = 38.7077507;
+  let lon = -9.1365919;
   let key = "04bf7320b0acbo6987aef70f64cbdt6d";
   let units = "metric";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?lon=${lon}&lat=${lat}&key=${key}&units=${units}`;
