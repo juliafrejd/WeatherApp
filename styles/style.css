@@ -1,22 +1,17 @@
 body {
-  background: radial-gradient(
-    circle at 10% 20%,
-    rgb(251, 221, 19) 0.1%,
-    rgb(255, 153, 1) 90%
-  );
+  background-color: #cae7d3;
   font-family: "Roboto", sans-serif;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin: 70px;
+  color: #0b6163;
 }
 
 button {
-  width: 100px;
-  height: 40px;
   margin-top: -3px;
 }
 .container {
   max-width: 900px;
-  background: rgba(255, 255, 255, 0.8);
+  min-height: 600px;
+  background: #f9fffb;
   padding: 60px 100px;
   border-radius: 20px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
@@ -25,11 +20,33 @@ button {
   font-weight: 700;
 }
 .btn-primary {
-  background-color: rgb(8, 177, 233);
-  border: none;
+  background-color: #167d7f;
+  border: 2px solid #167d7f;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  width: 120px;
+  height: 39px;
+  margin-right: 5px;
 }
 .btn-primary:hover {
-  background-color: rgb(23, 165, 213);
+  background-color: #0b6163;
+  border: 3px solid #0b6163;
+}
+.btn-secondary {
+  background-color: white;
+  border: 2px solid #167d7f;
+  color: #167d7f;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+  width: 120px;
+  height: 39px;
+}
+.btn-secondary:hover {
+  background-color: #167d7f;
+  border: 2px solid #167d7f;
 }
 .btn-outline-secondary {
   height: 40px;
@@ -38,6 +55,7 @@ button {
   height: 40px;
   width: 300px;
   display: inline;
+  margin-right: 10px;
 }
 
 .top h1 {
@@ -67,4 +85,8 @@ button {
   text-align: right;
   line-height: 3.8;
   word-spacing: 10px;
+}
+.footer {
+  text-align: center;
+  font-size: 13px;
 }

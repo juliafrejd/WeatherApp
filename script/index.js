@@ -29,7 +29,7 @@ function todaysDate() {
 
   let date = now.getDate();
   let year = now.getFullYear();
-  let printTodaysDate = document.querySelector(".today");
+  let printTodaysDate = document.querySelector("#date");
   printTodaysDate.innerHTML = `${day}, ${month} ${date} ${year}`;
 }
 todaysDate();
