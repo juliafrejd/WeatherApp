@@ -36,8 +36,9 @@ todaysDate();
 
 function showFahrenheit(event) {
   event.preventDefault();
-  let changeTemp = document.querySelector("#showtemp");
-  changeTemp.innerHTML = `66°F`;
+  let currentTemperature = document.querySelector("#showtemp");
+  let changeToFahrenheit = (celsiusTemperature * 9) / 5 + 32;
+  currentTemperature.innerHTML = `${Math.round(changeToFahrenheit)}°F`;
 }
 
 let fahrenheit = document.querySelector("#btnradio2");
@@ -45,8 +46,8 @@ fahrenheit.addEventListener("change", showFahrenheit);
 
 function showCelsius(event) {
   event.preventDefault();
-  let changeTemp = document.querySelector("#showtemp");
-  changeTemp.innerHTML = `19°C`;
+  let changeTemperature = document.querySelector("#showtemp");
+  changeTemperature.innerHTML = `${Math.round(celsiusTemperature)}°C`;
 }
 
 let celsius = document.querySelector("#btnradio1");
@@ -60,8 +61,10 @@ function showWeather(response) {
   let changeDescription = document.querySelector("#description");
   let changeIcon = document.querySelector("#icon");
 
+  celsiusTemperature = response.data.temperature.current;
+
   changeCity.innerHTML = response.data.city;
-  let temperature = Math.round(response.data.temperature.current);
+  let temperature = Math.round(celsiusTemperature);
   currentTemperature.innerHTML = `${temperature}°C`;
   let humidity = response.data.temperature.humidity;
   changeHumidity.innerHTML = `Humidity: ${humidity}%`;
@@ -73,6 +76,7 @@ function showWeather(response) {
     "src",
     `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
   );
+  changeIcon.setAttribute("alt", response.data.condition.description);
 }
 function showPosition(position) {
   let lat = 38.7077507;
@@ -105,3 +109,5 @@ function searchClick(event) {
 }
 let searchButton = document.querySelector("#search-button");
 searchButton.addEventListener("click", searchClick);
+
+let celsiusTemperature = null;
