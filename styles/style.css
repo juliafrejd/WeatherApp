@@ -16,8 +16,11 @@ button {
   border-radius: 20px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
 }
-#weather-description {
+#description {
   font-weight: 700;
+}
+#description:first-letter {
+  text-transform: capitalize;
 }
 .btn-primary {
   background-color: #167d7f;

@@ -57,6 +57,8 @@ function showWeather(response) {
   let currentTemperature = document.querySelector("#showtemp");
   let changeHumidity = document.querySelector("#humidity");
   let changeWind = document.querySelector("#wind");
+  let changeDescription = document.querySelector("#description");
+  let changeIcon = document.querySelector("#icon");
 
   changeCity.innerHTML = response.data.city;
   let temperature = Math.round(response.data.temperature.current);
@@ -65,6 +67,12 @@ function showWeather(response) {
   changeHumidity.innerHTML = `Humidity: ${humidity}%`;
   let wind = Math.round(response.data.wind.speed);
   changeWind.innerHTML = `Wind: ${wind}km/h`;
+  let description = response.data.condition.description;
+  changeDescription.innerHTML = `${description}`;
+  changeIcon.setAttribute(
+    "src",
+    `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
+  );
 }
 function showPosition(position) {
   let lat = 38.7077507;
