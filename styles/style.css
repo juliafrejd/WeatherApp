@@ -28,10 +28,11 @@ button {
   width: 120px;
   height: 39px;
   margin-right: 5px;
+  transition: 0.3s ease-in-out;
 }
 .btn-primary:hover {
   background-color: #0b6163;
-  border: 3px solid #0b6163;
+  border: none;
 }
 .btn-secondary {
   background-color: white;
@@ -56,6 +57,7 @@ button {
   width: 300px;
   display: inline;
   margin-right: 10px;
+  font-weight: 400;
 }
 
 .top h1 {
