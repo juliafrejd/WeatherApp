@@ -79,8 +79,8 @@ function showWeather(response) {
   changeIcon.setAttribute("alt", response.data.condition.description);
 }
 function showPosition(position) {
-  let lat = position.coordinates.latitude;
-  let lon = position.coordinates.longitude;
+  let lat = position.coords.latitude;
+  let lon = position.coords.longitude;
   let key = "04bf7320b0acbo6987aef70f64cbdt6d";
   let units = "metric";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?lon=${lon}&lat=${lat}&key=${key}&units=${units}`;
