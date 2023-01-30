@@ -26,17 +26,34 @@
         <div class="d-flex justify-content-between"></div>
         <div class="col-10">
           <div id="search-form">
-            <input
-              class="form-control"
-              type="search"
-              placeholder="Enter city"
-            />
-            <button type="button" id="search-button" class="btn btn-primary">
-              Search
-            </button>
-            <button type="button" id="current-button" class="btn btn-secondary">
-              Current
-            </button>
+            <form>
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Enter city"
+              />
+              <button type="submit" id="search-button" class="btn btn-primary">
+                Search
+              </button>
+              <button
+                type="button"
+                id="current-button"
+                class="btn btn-secondary"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-geo-alt-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                  />
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
         <div class="col">
@@ -76,6 +93,7 @@
         <div class="col">
           <div class="top">
             <h1 id="city">Welcome to the Weather App</h1>
+            <p id="country"></p>
             <p id="date"></p>
           </div>
           <div class="middle">
@@ -94,19 +112,19 @@
           </div>
         </div>
         <div class="col">
-          <!--<div class="weekdays-weather">
+          <div class="weekdays-weather">
             <p><strong>Today:</strong> ☀️ 17°C / 10°C</p>
             <p><strong>Tuesday:</strong> 🌦 17°C / 10°C</p>
             <p><strong>Wednesday:</strong> 🌩 17°C / 10°C</p>
             <p><strong>Thursday:</strong> 🌤 17°C / 10°C</p>
             <p><strong>Friday:</strong> ☀️ 17°C / 10°C</p>
-          </div>-->
+          </div>
         </div>
       </div>
     </div>
     <p id="github-link">
       <a href="https://github.com/juliafrejd/WeatherApp" target="_blank"
-        >Open sourced code on GitHub</a
+        >Open-sourced code on GitHub</a
       >
       by Julia Frejd
     </p>

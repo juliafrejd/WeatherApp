@@ -55,6 +55,7 @@ celsius.addEventListener("change", showCelsius);
 
 function showWeather(response) {
   let changeCity = document.querySelector("#city");
+  let changeCountry = document.querySelector("#country");
   let currentTemperature = document.querySelector("#showtemp");
   let changeHumidity = document.querySelector("#humidity");
   let changeWind = document.querySelector("#wind");
@@ -64,6 +65,7 @@ function showWeather(response) {
   celsiusTemperature = response.data.temperature.current;
 
   changeCity.innerHTML = response.data.city;
+  changeCountry.innerHTML = response.data.country;
   let temperature = Math.round(celsiusTemperature);
   currentTemperature.innerHTML = `${temperature}°C`;
   let humidity = response.data.temperature.humidity;
