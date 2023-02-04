@@ -90,34 +90,41 @@
         </div>
       </div>
       <div class="row">
-        <div class="col">
+        <div class="col-4">
           <div class="top">
-            <h1 id="city">Welcome to the Weather App</h1>
+            <h1 id="city">Weather App</h1>
             <p id="country"></p>
             <p id="date"></p>
           </div>
+        </div>
+        <div class="col-4">
           <div class="middle">
-            <img
-              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png"
-              alt="weather-icon"
-              id="icon"
-            />
+            <img id="icon" />
             <h2 id="showtemp"></h2>
             <br />
           </div>
+        </div>
+        <div class="col-4">
           <div class="bottom">
             <p id="description"></p>
             <p><span id="wind"></span></p>
             <p><span id="humidity"></span></p>
           </div>
         </div>
-        <div class="col">
-          <div class="weekdays-weather">
-            <p><strong>Today:</strong> ☀️ 17°C / 10°C</p>
-            <p><strong>Tuesday:</strong> 🌦 17°C / 10°C</p>
-            <p><strong>Wednesday:</strong> 🌩 17°C / 10°C</p>
-            <p><strong>Thursday:</strong> 🌤 17°C / 10°C</p>
-            <p><strong>Friday:</strong> ☀️ 17°C / 10°C</p>
+        <div class="weather-forecast">
+          <div class="row">
+            <div class="col-2">
+              <div class="weather-forecast-day">Today:</div>
+              <img
+                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png"
+                alt="weather-icon"
+                width="36"
+              />
+              <div class="weather-forecast-temp">
+                <span class="weather-forecast-temperature-max">17°</span>
+                <span class="weather-forecast-temperature-min">/ 10°</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
