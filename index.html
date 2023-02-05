@@ -22,77 +22,32 @@
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <div class="d-flex justify-content-between"></div>
-        <div class="col-10">
-          <div id="search-form">
-            <form>
-              <input
-                class="form-control"
-                type="search"
-                placeholder="Enter city"
-              />
-              <button type="submit" id="search-button" class="btn btn-primary">
-                Search
-              </button>
-              <button
-                type="button"
-                id="current-button"
-                class="btn btn-secondary"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-geo-alt-fill"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
-                  />
-                </svg>
-              </button>
-            </form>
-          </div>
-        </div>
-        <div class="col">
-          <div class="d-flex justify-content-end">
-            <div
-              class="btn-group"
-              role="group"
-              aria-label="Basic radio toggle button group"
+      <div id="search-form">
+        <form>
+          <input class="form-control" type="search" placeholder="Enter city" />
+          <button type="submit" id="search-button" class="btn btn-primary">
+            Search
+          </button>
+          <button type="button" id="current-button" class="btn btn-secondary">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-geo-alt-fill"
+              viewBox="0 0 16 16"
             >
-              <input
-                type="radio"
-                class="btn-check"
-                name="btnradio"
-                id="btnradio1"
-                autocomplete="off"
-                checked
+              <path
+                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
               />
-              <label class="btn btn-outline-secondary" for="btnradio1"
-                >°C</label
-              >
-
-              <input
-                type="radio"
-                class="btn-check"
-                name="btnradio"
-                id="btnradio2"
-                autocomplete="off"
-              />
-              <label class="btn btn-outline-secondary" for="btnradio2"
-                >°F</label
-              >
-            </div>
-          </div>
-        </div>
+            </svg>
+          </button>
+        </form>
       </div>
       <div class="row">
         <div class="col-4">
           <div class="top">
-            <h1 id="city">Weather App</h1>
+            <p id="city">Weather App</p>
             <p id="country"></p>
             <p id="date"></p>
           </div>
@@ -100,8 +55,7 @@
         <div class="col-4">
           <div class="middle">
             <img id="icon" />
-            <h2 id="showtemp"></h2>
-            <br />
+            <strong id="showtemp"></strong>
           </div>
         </div>
         <div class="col-4">

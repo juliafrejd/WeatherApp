@@ -11,24 +11,18 @@ button {
 .container {
   max-width: 900px;
   background: rgb(249, 255, 251, 0.8);
-  padding: 60px 100px;
+  padding: 60px 70px;
   border-radius: 20px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
 }
-#description {
-  font-size: 20px;
-  font-weight: 700;
-}
-#description:first-letter {
-  text-transform: capitalize;
-}
+
 .btn-primary {
   background-color: #167d7f;
   border: 2px solid #167d7f;
   text-transform: uppercase;
   font-size: 15px;
-  font-weight: 600;
-  width: 120px;
+  font-weight: 500;
+  width: 200px;
   height: 39px;
   margin-right: 5px;
   transition: 0.3s ease-in-out;
@@ -57,7 +51,7 @@ button {
 
 .form-control {
   height: 40px;
-  width: 300px;
+  width: 487px;
   display: inline;
   margin-right: 10px;
   font-weight: 400;
@@ -66,34 +60,56 @@ button {
 .middle,
 .bottom {
   padding-top: 40px;
-  text-align: center;
 }
 .top,
 .bottom {
   margin-top: 30px;
 }
-
-.top h1 {
-  font-size: 35px;
+.top {
+  text-align: left;
+}
+.middle {
+  text-align: center;
+}
+.bottom {
+  text-align: right;
+}
+#city {
+  font-size: 30px;
   font-weight: 700;
 }
-.top p {
-  font-size: 14px;
+#country {
+  font-size: 16px;
+  font-weight: 600;
 }
-.middle h2 {
-  font-size: 55px;
+#description {
+  font-size: 30px;
+  font-weight: 700;
+}
+#description:first-letter {
+  text-transform: capitalize;
+}
+#icon {
+  display: block;
+  margin: 0 auto;
+}
+#date {
+  font-size: 16px;
+}
+#showtemp {
+  font-size: 60px;
+  font-weight: 500;
 }
 .weather-forecast {
-  border: 1px solid rgba(11, 97, 99, 0.1);
-  border-radius: 10px;
-  padding: 10px;
+  margin: 0 auto;
   margin-top: 40px;
+  padding: 0;
   text-align: center;
 }
 .weather-forecast-day {
   color: rgba(11, 97, 99, 0.8);
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
 }
 .weather-forecast-temp {
   color: rgba(11, 97, 99, 0.8);
@@ -111,11 +127,4 @@ button {
   text-align: center;
   opacity: 0.8;
   margin: 5px;
-}
-#date {
-  font-size: 16px;
-}
-#country {
-  font-size: 16px;
-  font-weight: 600;
 }

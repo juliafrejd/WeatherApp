@@ -85,25 +85,6 @@ function displayForecast(response) {
   forecastElement.innerHTML = forecastHTML;
 }
 
-function showFahrenheit(event) {
-  event.preventDefault();
-  let currentTemperature = document.querySelector("#showtemp");
-  let changeToFahrenheit = (celsiusTemperature * 9) / 5 + 32;
-  currentTemperature.innerHTML = `${Math.round(changeToFahrenheit)}°F`;
-}
-
-let fahrenheit = document.querySelector("#btnradio2");
-fahrenheit.addEventListener("change", showFahrenheit);
-
-function showCelsius(event) {
-  event.preventDefault();
-  let changeTemperature = document.querySelector("#showtemp");
-  changeTemperature.innerHTML = `${Math.round(celsiusTemperature)}°C`;
-}
-
-let celsius = document.querySelector("#btnradio1");
-celsius.addEventListener("change", showCelsius);
-
 function getForecast(coordinates) {
   let key = "04bf7320b0acbo6987aef70f64cbdt6d";
   let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.longitude}&lat=${coordinates.latitude}&key=${key}&units=metric`;
@@ -120,17 +101,17 @@ function showWeather(response) {
   let changeIcon = document.querySelector("#icon");
 
   celsiusTemperature = response.data.temperature.current;
-
   changeCity.innerHTML = response.data.city;
   changeCountry.innerHTML = response.data.country;
   let temperature = Math.round(celsiusTemperature);
-  currentTemperature.innerHTML = `${temperature}°C`;
+  currentTemperature.innerHTML = `${temperature}°<sup><small>c</small></sup>`;
   let humidity = response.data.temperature.humidity;
   changeHumidity.innerHTML = `Humidity: ${humidity}%`;
   let wind = Math.round(response.data.wind.speed);
   changeWind.innerHTML = `Wind: ${wind}km/h`;
   let description = response.data.condition.description;
   changeDescription.innerHTML = `${description}`;
+
   changeIcon.setAttribute(
     "src",
     `https://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
@@ -170,5 +151,3 @@ function searchClick(event) {
 }
 let searchButton = document.querySelector("#search-button");
 searchButton.addEventListener("click", searchClick);
-
-let celsiusTemperature = null;
