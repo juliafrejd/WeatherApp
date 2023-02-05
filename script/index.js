@@ -34,11 +34,12 @@ function todaysDate() {
 }
 todaysDate();
 
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
-  let days = ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday"];
+  let days = ["Today", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"];
   days.forEach(function (day) {
     forecastHTML =
       forecastHTML +
@@ -80,6 +81,12 @@ function showCelsius(event) {
 let celsius = document.querySelector("#btnradio1");
 celsius.addEventListener("change", showCelsius);
 
+function getForecast(coordinates) {
+  let key = "04bf7320b0acbo6987aef70f64cbdt6d";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.longitude}&lat=${coordinates.latitude}&key=${key}&units=metric`;
+  console.log(apiUrl);
+  axios.get(apiUrl).then(displayForecast);
+}
 function showWeather(response) {
   let changeCity = document.querySelector("#city");
   let changeCountry = document.querySelector("#country");
@@ -106,6 +113,8 @@ function showWeather(response) {
     `https://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
   );
   changeIcon.setAttribute("alt", response.data.condition.description);
+
+  getForecast(response.data.coordinates);
 }
 function showPosition(position) {
   let lat = position.coords.latitude;
@@ -140,4 +149,3 @@ let searchButton = document.querySelector("#search-button");
 searchButton.addEventListener("click", searchClick);
 
 let celsiusTemperature = null;
-displayForecast();

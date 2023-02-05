@@ -1,5 +1,5 @@
 body {
-  background-color: #cae7d3;
+  background-color: #dff0e5;
   font-family: "Roboto", sans-serif;
   margin: 70px;
   color: #0b6163;
@@ -65,7 +65,7 @@ button {
 .top,
 .middle,
 .bottom {
-  padding-top: 20px;
+  padding-top: 40px;
   text-align: center;
 }
 .top,
@@ -84,13 +84,19 @@ button {
   font-size: 55px;
 }
 .weather-forecast {
+  border: 1px solid rgba(11, 97, 99, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 40px;
   text-align: center;
 }
 .weather-forecast-day {
+  color: rgba(11, 97, 99, 0.8);
   font-size: 16px;
   font-weight: 600;
 }
 .weather-forecast-temp {
+  color: rgba(11, 97, 99, 0.8);
   font-size: 13px;
 }
 .weather-forecast-temperature-min {
