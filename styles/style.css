@@ -1,7 +1,7 @@
 body {
   background-color: #dff0e5;
-  font-family: "Roboto", sans-serif;
-  margin: 70px;
+  font-family: "Montserrat", sans-serif;
+  margin: 50px;
   color: #0b6163;
 }
 
@@ -9,13 +9,18 @@ button {
   margin-top: -3px;
 }
 .container {
-  max-width: 900px;
+  max-width: 800px;
   background: rgb(249, 255, 251, 0.8);
-  padding: 60px 70px;
+  padding: 30px 70px;
   border-radius: 20px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
 }
-
+.heading {
+  font-size: 35px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  font-family: "Unbounded", cursive;
+}
 .btn-primary {
   background-color: #167d7f;
   border: 2px solid #167d7f;
@@ -25,6 +30,7 @@ button {
   width: 200px;
   height: 39px;
   margin-right: 5px;
+  margin-left: 5px;
   transition: 0.3s ease-in-out;
 }
 .btn-primary:hover {
@@ -39,43 +45,50 @@ button {
   font-weight: 600;
   text-transform: uppercase;
   transition: 0.3s ease-in-out;
-  width: 50px;
-}
-.bi-geo-alt-fill {
-  margin-bottom: 4px;
+  width: 54px;
+  height: 39px;
 }
 .btn-secondary:hover {
   background-color: #167d7f;
   border: 2px solid #167d7f;
 }
-
 .form-control {
   height: 40px;
-  width: 487px;
+  width: 387px;
   display: inline;
-  margin-right: 10px;
   font-weight: 400;
 }
-.top,
-.middle,
-.bottom {
-  padding-top: 40px;
+.bi-geo-alt-fill {
+  margin-top: -3px;
 }
-.top,
-.bottom {
-  margin-top: 30px;
+
+.left,
+.right,
+.middle {
+  margin: 30px 0;
 }
-.top {
+.left,
+.right {
+  margin-top: 55px;
+}
+.left {
   text-align: left;
+}
+.right {
+  text-align: right;
 }
 .middle {
   text-align: center;
 }
-.bottom {
-  text-align: right;
+#icon {
+  margin: 0 auto;
 }
 #city {
-  font-size: 30px;
+  font-size: 25px;
+  font-weight: 700;
+}
+#showtemp {
+  font-size: 50px;
   font-weight: 700;
 }
 #country {
@@ -83,26 +96,19 @@ button {
   font-weight: 600;
 }
 #description {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 700;
 }
 #description:first-letter {
   text-transform: capitalize;
 }
-#icon {
-  display: block;
-  margin: 0 auto;
-}
 #date {
   font-size: 16px;
 }
-#showtemp {
-  font-size: 60px;
-  font-weight: 500;
-}
 .weather-forecast {
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   padding: 0;
   text-align: center;
 }
@@ -118,13 +124,9 @@ button {
 .weather-forecast-temperature-min {
   opacity: 0.7;
 }
-.footer {
-  text-align: center;
-  font-size: 13px;
-}
 #github-link {
   font-size: 12px;
   text-align: center;
   opacity: 0.8;
-  margin: 5px;
+  margin-top: 30px;
 }

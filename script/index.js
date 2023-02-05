@@ -32,7 +32,6 @@ function todaysDate() {
   let printTodaysDate = document.querySelector("#date");
   printTodaysDate.innerHTML = `${day}, ${month} ${date} ${year}`;
 }
-todaysDate();
 
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
@@ -101,10 +100,10 @@ function showWeather(response) {
   let changeIcon = document.querySelector("#icon");
 
   celsiusTemperature = response.data.temperature.current;
-  changeCity.innerHTML = response.data.city;
+  changeCity.innerHTML = `${response.data.city}`;
   changeCountry.innerHTML = response.data.country;
   let temperature = Math.round(celsiusTemperature);
-  currentTemperature.innerHTML = `${temperature}°<sup><small>c</small></sup>`;
+  currentTemperature.innerHTML = `${temperature}°<small>C</small>`;
   let humidity = response.data.temperature.humidity;
   changeHumidity.innerHTML = `Humidity: ${humidity}%`;
   let wind = Math.round(response.data.wind.speed);
@@ -119,6 +118,7 @@ function showWeather(response) {
   changeIcon.setAttribute("alt", response.data.condition.description);
 
   getForecast(response.data.coordinates);
+  todaysDate();
 }
 function showPosition(position) {
   let lat = position.coords.latitude;
@@ -151,3 +151,6 @@ function searchClick(event) {
 }
 let searchButton = document.querySelector("#search-button");
 searchButton.addEventListener("click", searchClick);
+
+searchCity("Lisbon");
+showWeather();
