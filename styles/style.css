@@ -1,61 +1,66 @@
 body {
+  color: rgb(255, 255, 255);
   background: linear-gradient(
-    to top,
-    rgba(0, 198, 251, 0.6) 0%,
-    rgba(0, 91, 234, 0.6) 100%
+    19.6deg,
+    rgb(17, 151, 147) 11.2%,
+    rgb(154, 214, 212) 55.4%,
+    rgb(242, 215, 142) 100.2%
   );
   font-family: "Source Code Pro", monospace;
-  margin: 80px 90px;
-  color: #fff;
+  margin: 60px;
 }
 
 button {
   margin-top: -3px;
 }
 .container {
-  background: rgba(255, 255, 255, 0.2);
-  max-width: 800px;
-  border-radius: 35px;
-  padding: 30px 70px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: #ffffff 1px solid;
+  max-width: 900px;
+  border-radius: 15px;
+  padding: 40px 60px;
+  box-shadow: rgba(13, 14, 37, 0.08) 0px 8px 8px 0px;
 }
 .heading {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 50px;
-  font-weight: 700;
+  font-size: 40px;
+  font-weight: 800;
   margin-bottom: 30px;
 }
+
 .btn-primary {
-  background-color: rgba(0, 91, 234, 0.8);
+  background-color: rgb(17, 151, 147);
+  border: 1px solid rgb(17, 151, 147);
   text-transform: uppercase;
-  font-size: 15px;
-  font-weight: 500;
-  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  width: 238px;
   height: 40px;
-  margin-right: 3px;
+  margin-right: 2px;
   margin-left: 3px;
   transition: 0.3s ease-in-out;
 }
 .btn-primary:hover {
-  background-color: rgba(0, 75, 196, 0.8);
+  background-color: rgb(17, 151, 147);
+  border: 1px solid rgb(17, 151, 147);
 }
 .btn-secondary {
-  background-color: #effaf2;
-  border: 2.5px solid rgba(0, 91, 234, 0.8);
-  color: rgba(0, 91, 234, 0.8);
+  background-color: rgb(255, 255, 255);
+  border: none;
+  color: rgb(17, 151, 147);
   font-size: 15px;
   text-transform: uppercase;
   transition: 0.3s ease-in-out;
-  width: 54px;
+  width: 45px;
   height: 40px;
 }
 .btn-secondary:hover {
-  background-color: rgba(0, 91, 234, 0.8);
-  border: 2px solid rgba(0, 91, 234, 0.8);
+  background-color: rgb(17, 151, 147);
+  color: #fff;
+  border: none;
 }
 .form-control {
   height: 40px;
-  width: 380px;
+  width: 470px;
   display: inline;
   font-weight: 400;
 }
@@ -82,10 +87,11 @@ button {
   text-align: center;
 }
 #icon {
+  display: block;
   margin: 0 auto;
 }
 #city {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 700;
 }
 #showtemp {
@@ -93,17 +99,17 @@ button {
   font-weight: 700;
 }
 #country {
-  font-size: 16px;
+  font-size: 18px;
 }
 #description {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 700;
 }
 #description:first-letter {
   text-transform: capitalize;
 }
 #date {
-  font-size: 16px;
+  font-size: 18px;
 }
 .weather-forecast {
   margin: 0 auto;
@@ -114,22 +120,24 @@ button {
 }
 .weather-forecast-day {
   color: #fff;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 700;
 }
 .weather-forecast-temp {
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
 }
 .weather-forecast-temperature-min {
   opacity: 0.8;
 }
+#forecast img {
+  width: 50px;
+}
 #github-link {
   font-size: 12px;
   text-align: center;
-  opacity: 0.8;
   margin-top: 30px;
 }
 #github-link a {
-  color: rgba(0, 91, 234, 0.8);
+  color: rgb(17, 151, 147);
 }
