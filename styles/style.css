@@ -5,8 +5,9 @@ body {
     rgba(0, 91, 234, 0.6) 100%
   );
   font-family: "Montserrat", sans-serif;
-  margin: 75px;
+  margin: 90px;
   color: #fff;
+  width: 100%;
 }
 
 button {
