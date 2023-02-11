@@ -1,19 +1,22 @@
 body {
-  background-color: #dff0e5;
+  background: linear-gradient(
+    to top,
+    rgba(0, 198, 251, 0.6) 0%,
+    rgba(0, 91, 234, 0.6) 100%
+  );
   font-family: "Montserrat", sans-serif;
-  margin: 50px;
-  color: #0b6163;
+  margin: 75px;
+  color: #fff;
 }
 
 button {
   margin-top: -3px;
 }
 .container {
+  background: rgb(249, 255, 251, 0.2);
   max-width: 800px;
-  background: rgb(249, 255, 251, 0.8);
+  border-radius: 35px;
   padding: 30px 70px;
-  border-radius: 20px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
 }
 .heading {
   font-size: 35px;
@@ -22,35 +25,32 @@ button {
   font-family: "Unbounded", cursive;
 }
 .btn-primary {
-  background-color: #167d7f;
-  border: 2px solid #167d7f;
+  background-color: rgba(0, 91, 234, 0.8);
   text-transform: uppercase;
   font-size: 15px;
   font-weight: 500;
   width: 200px;
-  height: 39px;
+  height: 40px;
   margin-right: 5px;
   margin-left: 5px;
   transition: 0.3s ease-in-out;
 }
 .btn-primary:hover {
-  background-color: #0b6163;
-  border: none;
+  background-color: rgba(0, 75, 196, 0.8);
 }
 .btn-secondary {
   background-color: #effaf2;
-  border: 2px solid #167d7f;
-  color: #167d7f;
+  border: 2.5px solid rgba(0, 91, 234, 0.8);
+  color: rgba(0, 91, 234, 0.8);
   font-size: 15px;
-  font-weight: 600;
   text-transform: uppercase;
   transition: 0.3s ease-in-out;
   width: 54px;
-  height: 39px;
+  height: 40px;
 }
 .btn-secondary:hover {
-  background-color: #167d7f;
-  border: 2px solid #167d7f;
+  background-color: rgba(0, 91, 234, 0.8);
+  border: 2px solid rgba(0, 91, 234, 0.8);
 }
 .form-control {
   height: 40px;
