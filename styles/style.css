@@ -4,26 +4,26 @@ body {
     rgba(0, 198, 251, 0.6) 0%,
     rgba(0, 91, 234, 0.6) 100%
   );
-  font-family: "Montserrat", sans-serif;
-  margin: 90px;
+  font-family: "Source Code Pro", monospace;
+  margin: 70px;
   color: #fff;
-  width: 100%;
 }
 
 button {
   margin-top: -3px;
 }
 .container {
-  background: rgb(249, 255, 251, 0.2);
+  background: rgba(255, 255, 255, 0.2);
   max-width: 800px;
   border-radius: 35px;
   padding: 30px 70px;
 }
 .heading {
-  font-size: 35px;
-  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 700;
   margin-bottom: 30px;
-  font-family: "Unbounded", cursive;
 }
 .btn-primary {
   background-color: rgba(0, 91, 234, 0.8);
@@ -32,8 +32,8 @@ button {
   font-weight: 500;
   width: 200px;
   height: 40px;
-  margin-right: 5px;
-  margin-left: 5px;
+  margin-right: 3px;
+  margin-left: 3px;
   transition: 0.3s ease-in-out;
 }
 .btn-primary:hover {
@@ -55,7 +55,7 @@ button {
 }
 .form-control {
   height: 40px;
-  width: 387px;
+  width: 380px;
   display: inline;
   font-weight: 400;
 }
@@ -94,7 +94,6 @@ button {
 }
 #country {
   font-size: 16px;
-  font-weight: 600;
 }
 #description {
   font-size: 25px;
@@ -114,20 +113,23 @@ button {
   text-align: center;
 }
 .weather-forecast-day {
-  color: rgba(11, 97, 99, 0.8);
+  color: #fff;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
 }
 .weather-forecast-temp {
-  color: rgba(11, 97, 99, 0.8);
-  font-size: 13px;
+  color: #fff;
+  font-size: 14px;
 }
 .weather-forecast-temperature-min {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 #github-link {
   font-size: 12px;
   text-align: center;
   opacity: 0.8;
   margin-top: 30px;
+}
+#github-link a {
+  color: rgba(0, 91, 234, 0.8);
 }

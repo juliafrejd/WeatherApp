@@ -12,18 +12,18 @@ function todaysDate() {
   let day = days[now.getDay()];
 
   let months = [
-    "January",
-    "February",
-    "March",
-    "April",
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
     "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
   ];
   let month = months[now.getMonth()];
 
@@ -52,7 +52,6 @@ function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
-  let days = ["Today", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"];
   forecast.forEach(function (forecastDay, index) {
     if (index < 6) {
       forecastHTML =
@@ -101,13 +100,13 @@ function showWeather(response) {
 
   celsiusTemperature = response.data.temperature.current;
   changeCity.innerHTML = `${response.data.city}`;
-  changeCountry.innerHTML = response.data.country;
+  changeCountry.innerHTML = `<strong>${response.data.country}</strong>`;
   let temperature = Math.round(celsiusTemperature);
   currentTemperature.innerHTML = `${temperature}°<small>C</small>`;
   let humidity = response.data.temperature.humidity;
-  changeHumidity.innerHTML = `Humidity: ${humidity}%`;
+  changeHumidity.innerHTML = `<strong>Humidity:</strong> ${humidity}%`;
   let wind = Math.round(response.data.wind.speed);
-  changeWind.innerHTML = `Wind: ${wind}km/h`;
+  changeWind.innerHTML = `<strong>Wind:</strong> ${wind}km/h`;
   let description = response.data.condition.description;
   changeDescription.innerHTML = `${description}`;
 
