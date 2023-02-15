@@ -3,8 +3,8 @@ body {
   background: linear-gradient(
     19.6deg,
     rgb(17, 151, 147) 11.2%,
-    rgb(154, 214, 212) 55.4%,
-    rgb(242, 215, 142) 100.2%
+    rgb(123, 196, 194) 55.4%,
+    rgb(220, 185, 88) 100.2%
   );
   font-family: "Source Code Pro", monospace;
   margin: 60px;
@@ -18,39 +18,47 @@ button {
   border: #ffffff 1px solid;
   max-width: 900px;
   border-radius: 15px;
-  padding: 40px 60px;
+  padding: 30px 60px;
   box-shadow: rgba(13, 14, 37, 0.08) 0px 8px 8px 0px;
 }
 .heading {
+  text-align: center;
   font-size: 40px;
   font-weight: 800;
   margin-bottom: 30px;
 }
-
+.form-control {
+  display: inline;
+  padding: 10px;
+  width: 56.5%;
+  height: 40px;
+  font-weight: 400;
+}
 .btn-primary {
+  vertical-align: middle;
+  width: 30%;
   background-color: rgb(17, 151, 147);
   border: 1px solid rgb(17, 151, 147);
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 600;
-  width: 238px;
   height: 40px;
   margin-right: 2px;
   margin-left: 3px;
   transition: 0.3s ease-in-out;
 }
 .btn-primary:hover {
-  background-color: rgb(17, 151, 147);
-  border: 1px solid rgb(17, 151, 147);
+  background-color: rgb(9, 128, 124);
+  border: 1px solid rgb(9, 128, 124);
 }
 .btn-secondary {
+  width: 10%;
   background-color: rgb(255, 255, 255);
   border: none;
   color: rgb(17, 151, 147);
   font-size: 15px;
   text-transform: uppercase;
   transition: 0.3s ease-in-out;
-  width: 45px;
   height: 40px;
 }
 .btn-secondary:hover {
@@ -58,12 +66,7 @@ button {
   color: #fff;
   border: none;
 }
-.form-control {
-  height: 40px;
-  width: 470px;
-  display: inline;
-  font-weight: 400;
-}
+
 .bi-geo-alt-fill {
   margin-top: -3px;
 }
@@ -140,4 +143,6 @@ button {
 }
 #github-link a {
   color: rgb(17, 151, 147);
+}
+@media only screen and (max-width: 768px) {
 }
