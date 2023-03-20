@@ -12,25 +12,25 @@ function todaysDate() {
   let day = days[now.getDay()];
 
   let months = [
-    "Jan",
-    "Feb",
-    "Mar",
-    "Apr",
+    "January",
+    "February",
+    "March",
+    "April",
     "May",
-    "Jun",
-    "Jul",
-    "Aug",
-    "Sep",
-    "Oct",
-    "Nov",
-    "Dec",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
   ];
   let month = months[now.getMonth()];
 
   let date = now.getDate();
   let year = now.getFullYear();
   let printTodaysDate = document.querySelector("#date");
-  printTodaysDate.innerHTML = `${day}, ${month} ${date} ${year}`;
+  printTodaysDate.innerHTML = `${day}, ${month} ${date}, ${year}`;
 }
 
 function formatDay(timestamp) {
@@ -51,13 +51,13 @@ function displayForecast(response) {
   let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
 
-  let forecastHTML = `<div class="row">`;
+  let forecastHTML = `<div class="row row-weather-forecast">`;
   forecast.forEach(function (forecastDay, index) {
     if (index < 6) {
       forecastHTML =
         forecastHTML +
         `
-    <div class="col-2">
+    <div class="col-md-2 text-center">
       <div class="weather-forecast-day">${formatDay(forecastDay.time)}</div>
   
       <img

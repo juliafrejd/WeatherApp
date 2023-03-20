@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
 
@@ -25,7 +23,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="heading">Weather App</div>
+      <h1 class="text-center">weather app</h1>
       <div id="search-form">
         <form>
           <input class="form-control" type="search" placeholder="Enter city" />
@@ -49,36 +47,36 @@
           </button>
         </form>
       </div>
-      <div class="row">
-        <div class="col-4">
-          <div class="left">
-            <p id="city"></p>
-            <p id="country"></p>
-            <p id="date"></p>
-          </div>
+      <div>
+        <hr />
+      </div>
+      <div class="row todays-weather">
+        <div class="col-md-4">
+          <p id="city"></p>
+          <p id="country"></p>
+          <p id="date"></p>
         </div>
-        <div class="col-4">
-          <div class="middle">
-            <img id="icon" />
-            <strong id="showtemp"></strong>
-          </div>
+        <div class="col-md-4 text-center">
+          <img id="icon" />
+          <strong id="showtemp"></strong>
         </div>
-        <div class="col-4">
-          <div class="right">
-            <p id="description"></p>
-            <p><span id="wind"></span></p>
-            <p><span id="humidity"></span></p>
-          </div>
+        <div class="col-md-4 text-end">
+          <p id="description"></p>
+          <p><span id="wind"></span></p>
+          <p><span id="humidity"></span></p>
+        </div>
+        <div>
+          <hr />
         </div>
         <div class="weather-forecast" id="forecast"></div>
       </div>
-      <p id="github-link">
-        <a href="https://github.com/juliafrejd/WeatherApp" target="_blank"
-          >Open-sourced code on GitHub</a
-        >
-        by Julia Frejd
-      </p>
     </div>
+    <p id="footer">
+      <a href="https://github.com/juliafrejd/WeatherApp" target="_blank"
+        >Open-sourced code on GitHub</a
+      >
+      by Julia Frejd
+    </p>
     <script src="script/index.js"></script>
   </body>
 </html>
