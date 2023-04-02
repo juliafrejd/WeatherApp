@@ -58,7 +58,9 @@ function displayForecast(response) {
         forecastHTML +
         `
     <div class="col-md-2 text-center">
-      <div class="weather-forecast-day">${formatDay(forecastDay.time)}</div>
+      <div class="weather-forecast-day"><strong>${formatDay(
+        forecastDay.time
+      )}</strong></div>
   
       <img
         src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/${

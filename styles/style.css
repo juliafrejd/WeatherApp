@@ -132,4 +132,10 @@ form {
     flex-direction: column;
     margin: 0 auto;
   }
+  .weather-forecast-day {
+    font-weight: 700;
+  }
+  .weather-forecast-temp {
+    margin: 10px;
+  }
 }
